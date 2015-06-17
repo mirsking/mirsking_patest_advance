@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1003_emergency", "a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1004_counting_leaves", "advanced1004_counting_leaves\advanced1004_counting_leaves.vcxproj", "{E5EBDC87-ADAE-4D44-9088-C76F6072FE07}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1010_radix", "advanced1010_radix\advanced1010_radix.vcxproj", "{C818B020-A289-44F0-9188-EAEE5681C046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{E5EBDC87-ADAE-4D44-9088-C76F6072FE07}.Debug|Win32.Build.0 = Debug|Win32
 		{E5EBDC87-ADAE-4D44-9088-C76F6072FE07}.Release|Win32.ActiveCfg = Release|Win32
 		{E5EBDC87-ADAE-4D44-9088-C76F6072FE07}.Release|Win32.Build.0 = Release|Win32
+		{C818B020-A289-44F0-9188-EAEE5681C046}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C818B020-A289-44F0-9188-EAEE5681C046}.Debug|Win32.Build.0 = Debug|Win32
+		{C818B020-A289-44F0-9188-EAEE5681C046}.Release|Win32.ActiveCfg = Release|Win32
+		{C818B020-A289-44F0-9188-EAEE5681C046}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

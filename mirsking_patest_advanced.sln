@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1001_AxB_format", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1006_sign_in_and_sign_out", "advanced1006_sign_in_and_sign_out\advanced1006_sign_in_and_sign_out.vcxproj", "{4B8E4E57-0716-4321-B22E-56CC8D3513CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1007_maximum_subsequence_sum", "advanced1007_maximum_subsequence_sum\advanced1007_maximum_subsequence_sum.vcxproj", "{BE093812-8C99-4070-8371-176C09E58939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -57,6 +59,10 @@ Global
 		{4B8E4E57-0716-4321-B22E-56CC8D3513CC}.Debug|Win32.Build.0 = Debug|Win32
 		{4B8E4E57-0716-4321-B22E-56CC8D3513CC}.Release|Win32.ActiveCfg = Release|Win32
 		{4B8E4E57-0716-4321-B22E-56CC8D3513CC}.Release|Win32.Build.0 = Release|Win32
+		{BE093812-8C99-4070-8371-176C09E58939}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE093812-8C99-4070-8371-176C09E58939}.Debug|Win32.Build.0 = Debug|Win32
+		{BE093812-8C99-4070-8371-176C09E58939}.Release|Win32.ActiveCfg = Release|Win32
+		{BE093812-8C99-4070-8371-176C09E58939}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1007_maximum_subseq
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1009_product_of_polynomials", "advanced1009_product_of_polynomials\advanced1009_product_of_polynomials.vcxproj", "{004A2B95-BDE7-40A4-A889-6AA61689D714}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1011_world_cup_betting", "advanced1011_world_cup_betting\advanced1011_world_cup_betting.vcxproj", "{D0D1F9F5-D5BB-4588-A0E2-DEB0C4D8EB14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -69,6 +71,10 @@ Global
 		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Debug|Win32.Build.0 = Debug|Win32
 		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Release|Win32.ActiveCfg = Release|Win32
 		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Release|Win32.Build.0 = Release|Win32
+		{D0D1F9F5-D5BB-4588-A0E2-DEB0C4D8EB14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0D1F9F5-D5BB-4588-A0E2-DEB0C4D8EB14}.Debug|Win32.Build.0 = Debug|Win32
+		{D0D1F9F5-D5BB-4588-A0E2-DEB0C4D8EB14}.Release|Win32.ActiveCfg = Release|Win32
+		{D0D1F9F5-D5BB-4588-A0E2-DEB0C4D8EB14}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1006_sign_in_and_si
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1007_maximum_subsequence_sum", "advanced1007_maximum_subsequence_sum\advanced1007_maximum_subsequence_sum.vcxproj", "{BE093812-8C99-4070-8371-176C09E58939}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1009_product_of_polynomials", "advanced1009_product_of_polynomials\advanced1009_product_of_polynomials.vcxproj", "{004A2B95-BDE7-40A4-A889-6AA61689D714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +65,10 @@ Global
 		{BE093812-8C99-4070-8371-176C09E58939}.Debug|Win32.Build.0 = Debug|Win32
 		{BE093812-8C99-4070-8371-176C09E58939}.Release|Win32.ActiveCfg = Release|Win32
 		{BE093812-8C99-4070-8371-176C09E58939}.Release|Win32.Build.0 = Release|Win32
+		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Debug|Win32.ActiveCfg = Debug|Win32
+		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Debug|Win32.Build.0 = Debug|Win32
+		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Release|Win32.ActiveCfg = Release|Win32
+		{004A2B95-BDE7-40A4-A889-6AA61689D714}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

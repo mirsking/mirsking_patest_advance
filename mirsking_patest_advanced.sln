@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1011_world_cup_bett
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1012_the_best_rank", "advanced1012_the_best_rank\advanced1012_the_best_rank.vcxproj", "{0A08C39F-0BC7-4905-A134-B3D5790B170B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1015_reversible_primes", "advanced1015_reversible_primes\advanced1015_reversible_primes.vcxproj", "{DCE69BDF-1F80-46F9-9628-02F4374F27E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -81,6 +83,10 @@ Global
 		{0A08C39F-0BC7-4905-A134-B3D5790B170B}.Debug|Win32.Build.0 = Debug|Win32
 		{0A08C39F-0BC7-4905-A134-B3D5790B170B}.Release|Win32.ActiveCfg = Release|Win32
 		{0A08C39F-0BC7-4905-A134-B3D5790B170B}.Release|Win32.Build.0 = Release|Win32
+		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Debug|Win32.Build.0 = Debug|Win32
+		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Release|Win32.ActiveCfg = Release|Win32
+		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

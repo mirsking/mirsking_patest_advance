@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1012_the_best_rank"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1015_reversible_primes", "advanced1015_reversible_primes\advanced1015_reversible_primes.vcxproj", "{DCE69BDF-1F80-46F9-9628-02F4374F27E7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1016_phone_bills", "advanced1016_phone_bills\advanced1016_phone_bills.vcxproj", "{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -87,6 +89,10 @@ Global
 		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Debug|Win32.Build.0 = Debug|Win32
 		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Release|Win32.ActiveCfg = Release|Win32
 		{DCE69BDF-1F80-46F9-9628-02F4374F27E7}.Release|Win32.Build.0 = Release|Win32
+		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Debug|Win32.Build.0 = Debug|Win32
+		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Release|Win32.ActiveCfg = Release|Win32
+		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1015_reversible_pri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1016_phone_bills", "advanced1016_phone_bills\advanced1016_phone_bills.vcxproj", "{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1017_queueing_at_bank", "advanced1017_queueing_at_bank\advanced1017_queueing_at_bank.vcxproj", "{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -93,6 +95,10 @@ Global
 		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Debug|Win32.Build.0 = Debug|Win32
 		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Release|Win32.ActiveCfg = Release|Win32
 		{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}.Release|Win32.Build.0 = Release|Win32
+		{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}.Debug|Win32.Build.0 = Debug|Win32
+		{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}.Release|Win32.ActiveCfg = Release|Win32
+		{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

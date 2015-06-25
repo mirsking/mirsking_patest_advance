@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{35A0C37B-6D7D-4BD7-A88B-829C74B93AFC}</ProjectGuid>
+    <ProjectGuid>{25AF05C4-7B08-4129-8E92-CD978DCBF2EC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>advanced1016_phone_bills</RootNamespace>
+    <RootNamespace>advanced1017_queueing_at_bank</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -78,7 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="advanced1016_phone_bills.cpp" />
+    <ClCompile Include="advanced1017_queueing_at_bank.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -74,6 +74,8 @@ int main()
 		scanf("%d: ", &key);
 		string word;
 		getline(cin, word);
+		printf("%d: ", key);
+		cout << word << endl;
 
 		switch (key)
 		{

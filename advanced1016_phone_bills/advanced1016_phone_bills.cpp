@@ -59,6 +59,8 @@ public:
 			}
 			else
 			{
+				if (onlineFlag == true)
+					bills_index.pop_back();
 				onlineFlag = false;
 				id = bills[i].ID;
 				i--;
@@ -71,6 +73,7 @@ public:
 		return bills_index;
 	}
 
+	/*
 	void cal2Bills(Bill& bill1, Bill& bill2, int& min, float& price)
 	{
 		int min1 = (bill1.dd * 24 + bill1.hh) * 60 + bill1.mm;
@@ -94,6 +97,29 @@ public:
 		}
 		price += rate[end_h] * (min2 - end_h * 60);
 
+	}
+	*/
+
+	float calBill2Begin(Bill& bill)
+	{
+		float sum = 0;
+		int hours = bill.dd * 24 + bill.hh;
+		int& mins = bill.mm;
+		int i = 0;
+		for (; i < hours; i++)
+		{
+			sum += rate[i % 24] * 60;
+		}
+		sum += rate[i % 24] * mins;
+		return sum;
+	}
+
+	void cal2Bills(Bill& bill1, Bill& bill2, int& min, float& price)
+	{
+		int min1 = (bill1.dd * 24 + bill1.hh) * 60 + bill1.mm;
+		int min2 = (bill2.dd * 24 + bill2.hh) * 60 + bill2.mm;
+		min = min2 - min1;
+		price = calBill2Begin(bill2) - calBill2Begin(bill1);
 	}
 
 	void calBills(vector<int>& bills_index)
@@ -123,7 +149,7 @@ public:
 	}
 };
 
-bool greaterBill(const Bill& lhs, const Bill& rhs)
+bool lessBill(const Bill& lhs, const Bill& rhs)
 {
 	if (lhs.ID < rhs.ID)
 		return true;
@@ -179,7 +205,7 @@ int main()
 		bills.push_back(bill);
 	}
 
-	sort(bills.begin(), bills.end(), greaterBill);
+	sort(bills.begin(), bills.end(), lessBill);
 	vector<int> bills_index = bs.getValidBills();
 	bs.calBills(bills_index);
 

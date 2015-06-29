@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1019_general_palind
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1022_digital_library", "advanced1022_digital_library\advanced1022_digital_library.vcxproj", "{055428A4-7FA3-4620-A324-F0A06B372B7F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1024_palindromic_number", "advanced1024_palindromic_number\advanced1024_palindromic_number.vcxproj", "{ABD35D70-B0BD-4A10-B4AC-7096130017C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -117,6 +119,10 @@ Global
 		{055428A4-7FA3-4620-A324-F0A06B372B7F}.Debug|Win32.Build.0 = Debug|Win32
 		{055428A4-7FA3-4620-A324-F0A06B372B7F}.Release|Win32.ActiveCfg = Release|Win32
 		{055428A4-7FA3-4620-A324-F0A06B372B7F}.Release|Win32.Build.0 = Release|Win32
+		{ABD35D70-B0BD-4A10-B4AC-7096130017C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABD35D70-B0BD-4A10-B4AC-7096130017C2}.Debug|Win32.Build.0 = Debug|Win32
+		{ABD35D70-B0BD-4A10-B4AC-7096130017C2}.Release|Win32.ActiveCfg = Release|Win32
+		{ABD35D70-B0BD-4A10-B4AC-7096130017C2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,7 @@ int main()
 	scanf("%d%d%d", &R, &G, &B);
 	//cin >> R >> G >> B;
 	vector<char> res = convertMarsColor(R, G, B);
+	printf("#");
 	for (auto it = res.begin(); it != res.end(); it++)
 		printf("%c", *it);
 	return 0;

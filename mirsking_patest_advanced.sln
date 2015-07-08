@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1028_list_sorting",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1027_colors_in_mars", "advanced1027_colors_in_mars\advanced1027_colors_in_mars.vcxproj", "{3D8EB96B-A284-4119-8914-704CBD0EC041}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1029_median", "advanced1029_median\advanced1029_median.vcxproj", "{C5616BED-F6FC-4278-8EB8-5F7F08C2FD58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -147,6 +149,10 @@ Global
 		{3D8EB96B-A284-4119-8914-704CBD0EC041}.Debug|Win32.Build.0 = Debug|Win32
 		{3D8EB96B-A284-4119-8914-704CBD0EC041}.Release|Win32.ActiveCfg = Release|Win32
 		{3D8EB96B-A284-4119-8914-704CBD0EC041}.Release|Win32.Build.0 = Release|Win32
+		{C5616BED-F6FC-4278-8EB8-5F7F08C2FD58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5616BED-F6FC-4278-8EB8-5F7F08C2FD58}.Debug|Win32.Build.0 = Debug|Win32
+		{C5616BED-F6FC-4278-8EB8-5F7F08C2FD58}.Release|Win32.ActiveCfg = Release|Win32
+		{C5616BED-F6FC-4278-8EB8-5F7F08C2FD58}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

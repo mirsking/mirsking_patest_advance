@@ -61,8 +61,6 @@ void Dijkstra(const City& city, const int a, const int b, vector<int>&path, int&
 					}
 				}
 			}
-			if (v == b)
-				break;
 		}
 	}
 	sum_dist = dist[b];
@@ -95,7 +93,9 @@ int main()
 		Highway highway;
 		scanf("%d %d %d %d", &highway.start, &highway.end, &highway.distance, &highway.cost);
 		map[highway.start][highway.end].distance = highway.distance;
+		map[highway.end][highway.start].distance = highway.distance;
 		map[highway.start][highway.end].cost = highway.cost;
+		map[highway.end][highway.start].cost = highway.cost;
 	}
 
 	vector<int> path;

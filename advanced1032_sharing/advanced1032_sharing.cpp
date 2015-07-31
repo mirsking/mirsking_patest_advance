@@ -53,7 +53,7 @@ int main()
 	if (index == -1)
 		printf("-1");
 	else
-		printf("%5d", index);
+		printf("%05d", index);
 
 	return 0;
 }

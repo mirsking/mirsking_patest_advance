@@ -75,6 +75,19 @@ int main()
 	}
 	sort(stations.begin(), stations.end(), closer);
 
+	// start point is destination
+	if (D == 0)
+	{
+		printf("%.2lf", 0.0);
+		return 0;
+	}
+	// start point has no station
+	if (stations[0].distancce > 0)
+	{
+		printf("The maximum travel distance = %.2lf", 0.0);
+		return 0;
+	}
+
 	double sum_cost = 0;
 	double sum_distance = 0;
 	double max_steps = C*unit_gas;

@@ -31,6 +31,7 @@ bool findMin(vector<GasStation>& stations, int cur_index, double max_reachable_d
 			if (next_sta.price < curr_sta.price) // ÕÒµ½cheaperµÄstation
 			{
 				cheaper_index = i;
+				break;
 			}
 			else if (next_sta.price < cheapest_price)
 			{
@@ -75,10 +76,83 @@ int main()
 	sort(stations.begin(), stations.end(), closer);
 
 	double sum_cost = 0;
-	double max_distance = 0;
+	double sum_distance = 0;
 	double max_steps = C*unit_gas;
 	double remain_gas = 0;
+	bool to_end = false;
 
-
+	int curr_index = 0;
+	bool return_flag = false;
+	while (!return_flag)
+	{
+		auto& curr_st = stations[curr_index];
+		int next_index;
+		if (findMin(stations, curr_index, max_steps, next_index))// find cheaper gas station
+		{
+			auto& next_st = stations[next_index];
+			if (next_st.distancce >= D) // next_index is further than destination
+			{
+				double add_gas = (D - curr_st.distancce) / unit_gas - remain_gas;
+				if (add_gas < 0) add_gas = 0;
+				sum_cost += add_gas*curr_st.price;
+				printf("%.2lf", sum_cost);
+				return_flag = true;
+				break;
+			}
+			else // station is before the destination
+			{
+				double add_gas = (next_st.distancce - curr_st.distancce) / unit_gas - remain_gas;
+				if (add_gas < 0) add_gas = 0;
+				sum_cost += add_gas*curr_st.price;
+				sum_distance = next_st.distancce;
+				remain_gas = 0;
+			}
+			curr_index = next_index;
+		}
+		else
+		{
+			if (next_index != -1)//find the cheapest gas
+			{
+				auto& next_st = stations[next_index];
+				if (next_st.distancce >= D) // next_index is further than destination
+				{
+					double add_gas = (D - curr_st.distancce) / unit_gas - remain_gas;
+					if (add_gas < 0) add_gas = 0;
+					sum_cost += add_gas*curr_st.price;
+					printf("%.2lf", sum_cost);
+					return_flag = true;
+					break;
+				}
+				else
+				{
+					double add_gas = C-remain_gas;
+					if (add_gas < 0) add_gas = 0;
+					sum_cost += add_gas* curr_st.price;
+					sum_distance = next_st.distancce;
+					remain_gas = C - (next_st.distancce - curr_st.distancce) / unit_gas;
+				}
+				curr_index = next_index;
+			}
+			else // no gas
+			{
+				if (max_steps >= D-curr_st.distancce) // can go from current gas station to the destination
+				{
+					double add_gas = (D - curr_st.distancce) / unit_gas - remain_gas;
+					if (add_gas < 0) add_gas = 0;
+					sum_cost += add_gas*curr_st.price;
+					printf("%.2lf", sum_cost);
+					return_flag = true;
+					break;
+				}
+				else
+				{
+					sum_distance += max_steps;
+					printf("The maximum travel distance = %.2lf", sum_distance);
+					return_flag = true;
+					break;
+				}
+			}
+		}
+	}
 	return 0;
 }

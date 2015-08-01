@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1031_helloworld_for
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1032_sharing", "advanced1032_sharing\advanced1032_sharing.vcxproj", "{ECB7ECCE-51D1-4FBC-AB58-D1A4448F929A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1033_to_fill_or_not_fill", "advanced1033_to_fill_or_not_fill\advanced1033_to_fill_or_not_fill.vcxproj", "{FFD88D41-5924-4A36-86EE-112A14235F0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -171,6 +173,10 @@ Global
 		{ECB7ECCE-51D1-4FBC-AB58-D1A4448F929A}.Debug|Win32.Build.0 = Debug|Win32
 		{ECB7ECCE-51D1-4FBC-AB58-D1A4448F929A}.Release|Win32.ActiveCfg = Release|Win32
 		{ECB7ECCE-51D1-4FBC-AB58-D1A4448F929A}.Release|Win32.Build.0 = Release|Win32
+		{FFD88D41-5924-4A36-86EE-112A14235F0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFD88D41-5924-4A36-86EE-112A14235F0A}.Debug|Win32.Build.0 = Debug|Win32
+		{FFD88D41-5924-4A36-86EE-112A14235F0A}.Release|Win32.ActiveCfg = Release|Win32
+		{FFD88D41-5924-4A36-86EE-112A14235F0A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

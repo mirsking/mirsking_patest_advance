@@ -146,7 +146,7 @@ int main()
 				}
 				curr_index = next_index;
 			}
-			else // no gas
+			else // no gas station
 			{
 				if (max_steps >= D-curr_st.distancce) // can go from current gas station to the destination
 				{

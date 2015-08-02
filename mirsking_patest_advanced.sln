@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1034_head_of_gang",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1035_password", "advanced1035_password\advanced1035_password.vcxproj", "{1038B036-9745-4CA3-85DF-1BEF9E9EE680}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1041_be_unique", "advanced1041_be_unique\advanced1041_be_unique.vcxproj", "{F8B96EAD-3C4D-4A57-8BAA-F3008EB60598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -189,6 +191,10 @@ Global
 		{1038B036-9745-4CA3-85DF-1BEF9E9EE680}.Debug|Win32.Build.0 = Debug|Win32
 		{1038B036-9745-4CA3-85DF-1BEF9E9EE680}.Release|Win32.ActiveCfg = Release|Win32
 		{1038B036-9745-4CA3-85DF-1BEF9E9EE680}.Release|Win32.Build.0 = Release|Win32
+		{F8B96EAD-3C4D-4A57-8BAA-F3008EB60598}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8B96EAD-3C4D-4A57-8BAA-F3008EB60598}.Debug|Win32.Build.0 = Debug|Win32
+		{F8B96EAD-3C4D-4A57-8BAA-F3008EB60598}.Release|Win32.ActiveCfg = Release|Win32
+		{F8B96EAD-3C4D-4A57-8BAA-F3008EB60598}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

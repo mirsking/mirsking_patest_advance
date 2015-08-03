@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1038_recover_the_sm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1037_magic_coupon", "advanced1037_magic_coupon\advanced1037_magic_coupon.vcxproj", "{322CD3E6-4220-417F-BCD0-829D113E6B7E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1042_shuffling_machine", "advanced1042_shuffling_machine\advanced1042_shuffling_machine.vcxproj", "{C7CE7244-642C-42EB-87EB-414357BE05B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -213,6 +215,10 @@ Global
 		{322CD3E6-4220-417F-BCD0-829D113E6B7E}.Debug|Win32.Build.0 = Debug|Win32
 		{322CD3E6-4220-417F-BCD0-829D113E6B7E}.Release|Win32.ActiveCfg = Release|Win32
 		{322CD3E6-4220-417F-BCD0-829D113E6B7E}.Release|Win32.Build.0 = Release|Win32
+		{C7CE7244-642C-42EB-87EB-414357BE05B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7CE7244-642C-42EB-87EB-414357BE05B6}.Debug|Win32.Build.0 = Debug|Win32
+		{C7CE7244-642C-42EB-87EB-414357BE05B6}.Release|Win32.ActiveCfg = Release|Win32
+		{C7CE7244-642C-42EB-87EB-414357BE05B6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1042_shuffling_mach
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1039_course_list_for_students", "advanced1039_course_list_for_students\advanced1039_course_list_for_students.vcxproj", "{E7208CB1-88FE-49AF-9A8F-BB30A91E1FC4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1045_favorite_color_stripe", "advanced1045_favorite_color_stripe\advanced1045_favorite_color_stripe.vcxproj", "{3F9CEFAC-60A9-4D19-BCE7-7F3847C542B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -225,6 +227,10 @@ Global
 		{E7208CB1-88FE-49AF-9A8F-BB30A91E1FC4}.Debug|Win32.Build.0 = Debug|Win32
 		{E7208CB1-88FE-49AF-9A8F-BB30A91E1FC4}.Release|Win32.ActiveCfg = Release|Win32
 		{E7208CB1-88FE-49AF-9A8F-BB30A91E1FC4}.Release|Win32.Build.0 = Release|Win32
+		{3F9CEFAC-60A9-4D19-BCE7-7F3847C542B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F9CEFAC-60A9-4D19-BCE7-7F3847C542B9}.Debug|Win32.Build.0 = Debug|Win32
+		{3F9CEFAC-60A9-4D19-BCE7-7F3847C542B9}.Release|Win32.ActiveCfg = Release|Win32
+		{3F9CEFAC-60A9-4D19-BCE7-7F3847C542B9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

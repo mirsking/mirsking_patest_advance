@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+#define min(x,y) (x>y?y:x)
 typedef long long LL;
 
 LL getShortestDistance(vector<LL>& distances, LL a, LL b)
@@ -12,26 +12,9 @@ LL getShortestDistance(vector<LL>& distances, LL a, LL b)
 
 	LL tmp = a; 
 	if (a > b)
-	{
-		a = b;
-		b = tmp;
-	}
-
-	// positive direction
-	LL sum = 0;
-	for (LL i = a; i < b; i++)
-		sum += distances[i];
-	LL sum2 = 0;
-	for (LL i = b; i < distances.size()+a; i++)
-	{
-		LL tmp = i;
-		if (i >= distances.size())
-			tmp = i - distances.size();
-		sum2 += distances[tmp];
-		if (sum2>=sum)
-			return sum;
-	}
-	return sum2;
+		a = b, b = tmp;
+	LL res = distances[b] - distances[a];
+	return min(res, distances[distances.size() - 1] - res);
 }
 
 int main()
@@ -39,10 +22,12 @@ int main()
 	LL N;
 	cin >> N;
 	vector<LL> distances;
-	while (N--)
+	distances.resize(N + 1);
+	distances[0] = 0;
+	for (int i = 1; i <= N;i++)
 	{
 		LL tmp; cin >> tmp;
-		distances.push_back(tmp);
+		distances[i] = tmp + distances[i - 1];
 	}
 
 	LL M;

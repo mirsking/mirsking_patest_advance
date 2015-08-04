@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1045_favorite_color
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1046_shortest_distance", "advanced1046_shortest_distance\advanced1046_shortest_distance.vcxproj", "{26033E94-8006-49D5-9C1A-8F838215A76F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1040_longest_symmetric_string", "advanced1040_longest_symmetric_string\advanced1040_longest_symmetric_string.vcxproj", "{014CA703-30F7-4260-B924-19365724AA36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -237,6 +239,10 @@ Global
 		{26033E94-8006-49D5-9C1A-8F838215A76F}.Debug|Win32.Build.0 = Debug|Win32
 		{26033E94-8006-49D5-9C1A-8F838215A76F}.Release|Win32.ActiveCfg = Release|Win32
 		{26033E94-8006-49D5-9C1A-8F838215A76F}.Release|Win32.Build.0 = Release|Win32
+		{014CA703-30F7-4260-B924-19365724AA36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{014CA703-30F7-4260-B924-19365724AA36}.Debug|Win32.Build.0 = Debug|Win32
+		{014CA703-30F7-4260-B924-19365724AA36}.Release|Win32.ActiveCfg = Release|Win32
+		{014CA703-30F7-4260-B924-19365724AA36}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

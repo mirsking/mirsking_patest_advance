@@ -9,88 +9,63 @@ struct TreeNode {
 	TreeNode(int v) :val(v), left(nullptr), right(nullptr){};
 };
 
-TreeNode* creatTreeByPreOrder(vector<int>& vec, bool mirror_flag, bool& rtn_flag)
+void insertNode(TreeNode* &root, int val)
 {
-	if (vec.size() == 0)
-		return nullptr;
-
-	TreeNode* root = new TreeNode(vec[0]);
-	vector<int> left, right;
-	if (mirror_flag == false)
-	{
-		size_t index = 1;
-		for (; index < vec.size(); index++)
-		{
-			if (vec[index] < root->val)
-				left.push_back(vec[index]);
-			else
-				break;
-		}
-		for (; index < vec.size(); index++)
-		{
-			if (vec[index] >= root->val)
-				right.push_back(vec[index]);
-			else
-				break;
-		}
-	}
+	if (root == nullptr)
+		root = new TreeNode(val);
 	else
 	{
-		size_t index = 1;
-		for (; index < vec.size(); index++)
-		{
-			if (vec[index] >= root->val)
-				left.push_back(vec[index]);
-			else
-				break;
-		}
-		for (; index < vec.size(); index++)
-		{
-			if (vec[index] < root->val)
-				right.push_back(vec[index]);
-			else
-				break;
-		}
-	}
-	if (left.size() + right.size() != vec.size() - 1)
-	{
-		rtn_flag = false;
-		return nullptr;
-	}
-	else
-	{
-		root->left = creatTreeByPreOrder(left, mirror_flag, rtn_flag);
-		root->right= creatTreeByPreOrder(right, mirror_flag, rtn_flag);
-		rtn_flag = true;
-		return root;
-	}
-		
-}
-
-
-TreeNode* creatTreeByPreOrder(vector<int>& vec, bool& rtn_flag)
-{
-	TreeNode* root = creatTreeByPreOrder(vec, false, rtn_flag);
-	if (rtn_flag == true)
-		return root;
-	else
-	{
-		TreeNode* root = creatTreeByPreOrder(vec, true, rtn_flag);
-		if (rtn_flag == true)
-			return root;
+		if (val >= root->val)
+			insertNode(root->right, val);
 		else
-			return nullptr;
+			insertNode(root->left, val);
 	}
 }
 
-void postOrderTravesal(TreeNode* root, vector<int>& vec)
+void creatTree(vector<int>& vec, TreeNode* &root)
+{
+	for (int i = 0; i < vec.size(); i++)
+	{
+		insertNode(root, vec[i]);
+	}
+}
+
+void preOrderTravesal(TreeNode* root, vector<int>& vec, bool mirror_flag)
 {
 	if (root == nullptr)
 		return;
 	else
 	{
-		postOrderTravesal(root->left, vec);
-		postOrderTravesal(root->right, vec);
+		vec.push_back(root->val);
+		if (mirror_flag == true)
+		{
+			preOrderTravesal(root->right, vec, mirror_flag);
+			preOrderTravesal(root->left, vec, mirror_flag);
+		}
+		else
+		{
+			preOrderTravesal(root->left, vec, mirror_flag);
+			preOrderTravesal(root->right, vec, mirror_flag);
+		}
+	}
+}
+
+void postOrderTravesal(TreeNode* root, vector<int>& vec, bool mirror_flag)
+{
+	if (root == nullptr)
+		return;
+	else
+	{
+		if (mirror_flag == true)
+		{
+			postOrderTravesal(root->right, vec, mirror_flag);
+			postOrderTravesal(root->left, vec, mirror_flag);
+		}
+		else
+		{
+			postOrderTravesal(root->left, vec, mirror_flag);
+			postOrderTravesal(root->right, vec, mirror_flag);
+		}
 		vec.push_back(root->val);
 	}
 }
@@ -101,26 +76,48 @@ int main()
 	vector<int> vec;
 	cin >> N;
 	vec.resize(N);
-	for (int i = 0; i < N;i++)
+	TreeNode* root = nullptr;
+	for (int i = 0; i < N; i++)
+	{
 		cin >> vec[i];
-	bool rtn_flag = false;
-	TreeNode* root = creatTreeByPreOrder(vec, rtn_flag);
-	if (rtn_flag == false)
-	{
-		cout << "NO";
+		insertNode(root, vec[i]);
 	}
-	else
+	//creatTree(vec, root);
+	vector<int> vec2;
+
+	preOrderTravesal(root, vec2, false);
+	if (vec2 == vec)
 	{
-		vector<int> res;
-		postOrderTravesal(root, res);
+		vec2.clear();
+		postOrderTravesal(root, vec2, false);
 		cout << "YES" << endl;
-		for (auto it = res.begin(); it != res.end(); it++)
+		for (auto it = vec2.begin(); it != vec2.end(); it++)
 		{
 			cout << *it;
-			if (it != res.end() - 1)
+			if (it != vec2.end() - 1)
 				cout << " ";
 		}
 	}
-	
+	else
+	{
+		vec2.clear();
+		preOrderTravesal(root, vec2, true);
+		if (vec2 == vec)
+		{
+			vec2.clear();
+			postOrderTravesal(root, vec2, true);
+			cout << "YES" << endl;
+			for (auto it = vec2.begin(); it != vec2.end(); it++)
+			{
+				cout << *it;
+				if (it != vec2.end() - 1)
+					cout << " ";
+			}
+		}
+		else
+			cout << "NO";
+	}
+
+
 	return 0;
 }

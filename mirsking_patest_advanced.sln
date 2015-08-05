@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1044_shopping_in_ma
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1047_student_list_for_course", "advanced1047_student_list_for_course\advanced1047_student_list_for_course.vcxproj", "{CC1F03E7-080B-47F6-959C-4379B5FFD988}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1048_find_coins", "advanced1048_find_coins\advanced1048_find_coins.vcxproj", "{845ED421-2A4B-4CE4-8A58-F0612B55932D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -273,6 +275,10 @@ Global
 		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Debug|Win32.Build.0 = Debug|Win32
 		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Release|Win32.ActiveCfg = Release|Win32
 		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Release|Win32.Build.0 = Release|Win32
+		{845ED421-2A4B-4CE4-8A58-F0612B55932D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{845ED421-2A4B-4CE4-8A58-F0612B55932D}.Debug|Win32.Build.0 = Debug|Win32
+		{845ED421-2A4B-4CE4-8A58-F0612B55932D}.Release|Win32.ActiveCfg = Release|Win32
+		{845ED421-2A4B-4CE4-8A58-F0612B55932D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

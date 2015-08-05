@@ -89,6 +89,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1043_is_it_BST", "a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1044_shopping_in_mars", "advanced1044_shopping_in_mars\advanced1044_shopping_in_mars.vcxproj", "{85131DFF-A0E7-4086-A8AB-66A778990753}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1047_student_list_for_course", "advanced1047_student_list_for_course\advanced1047_student_list_for_course.vcxproj", "{CC1F03E7-080B-47F6-959C-4379B5FFD988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -267,6 +269,10 @@ Global
 		{85131DFF-A0E7-4086-A8AB-66A778990753}.Debug|Win32.Build.0 = Debug|Win32
 		{85131DFF-A0E7-4086-A8AB-66A778990753}.Release|Win32.ActiveCfg = Release|Win32
 		{85131DFF-A0E7-4086-A8AB-66A778990753}.Release|Win32.Build.0 = Release|Win32
+		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Debug|Win32.Build.0 = Debug|Win32
+		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Release|Win32.ActiveCfg = Release|Win32
+		{CC1F03E7-080B-47F6-959C-4379B5FFD988}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

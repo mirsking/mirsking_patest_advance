@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1049_counting_ones"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1050_string_substring", "advanced1050_string_substring\advanced1050_string_substring.vcxproj", "{DE26A16C-7008-4811-A156-0854DDE692CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1043_is_it_BST", "advanced1043_is_it_BST\advanced1043_is_it_BST.vcxproj", "{2D163E69-C632-432D-BCEA-F6B26F8D1FFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -255,6 +257,10 @@ Global
 		{DE26A16C-7008-4811-A156-0854DDE692CC}.Debug|Win32.Build.0 = Debug|Win32
 		{DE26A16C-7008-4811-A156-0854DDE692CC}.Release|Win32.ActiveCfg = Release|Win32
 		{DE26A16C-7008-4811-A156-0854DDE692CC}.Release|Win32.Build.0 = Release|Win32
+		{2D163E69-C632-432D-BCEA-F6B26F8D1FFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D163E69-C632-432D-BCEA-F6B26F8D1FFA}.Debug|Win32.Build.0 = Debug|Win32
+		{2D163E69-C632-432D-BCEA-F6B26F8D1FFA}.Release|Win32.ActiveCfg = Release|Win32
+		{2D163E69-C632-432D-BCEA-F6B26F8D1FFA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

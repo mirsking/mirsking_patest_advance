@@ -83,6 +83,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1040_longest_symmet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1049_counting_ones", "advanced1049_counting_ones\advanced1049_counting_ones.vcxproj", "{E73DB284-1C30-4C5C-A0F9-CB8B25CD7B92}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1050_string_substring", "advanced1050_string_substring\advanced1050_string_substring.vcxproj", "{DE26A16C-7008-4811-A156-0854DDE692CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -249,6 +251,10 @@ Global
 		{E73DB284-1C30-4C5C-A0F9-CB8B25CD7B92}.Debug|Win32.Build.0 = Debug|Win32
 		{E73DB284-1C30-4C5C-A0F9-CB8B25CD7B92}.Release|Win32.ActiveCfg = Release|Win32
 		{E73DB284-1C30-4C5C-A0F9-CB8B25CD7B92}.Release|Win32.Build.0 = Release|Win32
+		{DE26A16C-7008-4811-A156-0854DDE692CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE26A16C-7008-4811-A156-0854DDE692CC}.Debug|Win32.Build.0 = Debug|Win32
+		{DE26A16C-7008-4811-A156-0854DDE692CC}.Release|Win32.ActiveCfg = Release|Win32
+		{DE26A16C-7008-4811-A156-0854DDE692CC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

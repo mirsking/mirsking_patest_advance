@@ -18,7 +18,7 @@ int main()
 			coins.push_back(tmp);
 	}
 	N = coins.size();
-	if (N == 1)
+	if (N <= 1)
 	{
 		cout << "No Solution" << endl;
 		return 0;

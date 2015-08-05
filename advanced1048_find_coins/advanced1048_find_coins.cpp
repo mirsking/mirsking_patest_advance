@@ -9,46 +9,56 @@ int main()
 
 	int N, M;
 	cin >> N >> M;
-	vector<int> coins(N);
+	vector<int> coins;
 	for (int i = 0; i < N;i++)
 	{
-		cin >> coins[i];
+		int tmp;
+		cin >> tmp;
+		if (tmp < M)
+			coins.push_back(tmp);
+	}
+	N = coins.size();
+	if (N == 1)
+	{
+		cout << "No Solution" << endl;
+		return 0;
 	}
 	sort(coins.begin(), coins.end());
 
 	int left = 0; int right = coins.size() - 1;
 	int sum = coins[left] + coins[right];
-	bool find_flag = false;
-	while (!find_flag)
+	while (1)
 	{
 		while (sum > M)
 		{
 			right--;
-			if (right == left)
+			if (left>=right)
 			{
-				right--;
-				break;
+				cout << "No Solution" << endl;
+				return 0;
 			}
 			sum = coins[left] + coins[right];
 		}
 		if (sum == M)
 		{
 			cout << coins[left] << " " << coins[right] << endl;
-			find_flag = true;
-			break;
+			return 0;
 		}
 		while (sum < M)
 		{
 			left++;
-			if (left == right)
-				break;
+			if (left >= right)
+			{
+				cout << "No Solution" << endl;
+				return 0;
+			}
 			sum = coins[left] + coins[right];
 			while (sum < M)
 			{
 				right++;
 				if (right == N)
 				{
-					right--;
+					right = N-1;
 					break;
 				}
 				sum = coins[left] + coins[right];
@@ -56,15 +66,8 @@ int main()
 			if (sum == M)
 			{
 				cout << coins[left] << " " << coins[right] << endl;
-				find_flag = true;
-				break;
+				return 0;
 			}
-		}
-		if (right <= left)
-		{
-			cout << "No Solution" << endl;
-			find_flag = true;
-			break;
 		}
 	}
 	return 0;

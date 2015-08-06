@@ -23,8 +23,10 @@ void getR2L(const Tree& tree, LL root, LL& cur_weights, vector<LL>& cur_path, ve
 	else if (cur_weights == tree.desire_weight)
 	{
 		if (tree.sons[root].size() == 0)// leaf node
+		{
 			res.push_back(cur_path);
-		return;
+			return;
+		}
 	}
 
 	for (auto it = tree.sons[root].rbegin(); it != tree.sons[root].rend(); it++)
@@ -42,6 +44,8 @@ bool compare(const vector<LL>& lhs, const vector<LL>& rhs)
 	{
 		if (*lit > *rit)
 			return false;
+		else if (*lit < *rit)
+			return true;
 	}
 	if (lhs.size() == rhs.size())
 		return false;// equal should return false in std::stl

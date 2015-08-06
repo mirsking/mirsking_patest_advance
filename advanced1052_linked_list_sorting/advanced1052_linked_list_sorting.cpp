@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 struct ListNode{
@@ -8,26 +9,16 @@ struct ListNode{
 	int right;
 };
 
-void insertListNode(vector<ListNode>& list, ListNode& node)
+bool compare(const ListNode& lhs, const ListNode& rhs)
 {
-	int before_size = list.size();
-	for (auto it = list.begin(); it != list.end(); it++)
-	{
-		if (it->val > node.val)
-		{
-			list.insert(it, node);
-			break;
-		}
-	}
-	if (before_size == list.size())// didn't insert succesfully
-		list.push_back(node);
+	return lhs.val < rhs.val;
 }
 
 int main()
 {
 	int N, head;
 	cin >> N >> head;
-	vector<ListNode> list(N), sorted_list, res_list;
+	vector<ListNode> list(N), sorted_list;
 	vector<int> list_vals(100000, -1);
 	for (int i = 0; i < N; i++)
 	{
@@ -36,9 +27,9 @@ int main()
 		list_vals[node.left] = i;
 	}
 
-	if (list_vals[head] == -1)// no valid list node
+	if (head==-1 || list_vals[head] == -1)// no valid list node
 	{
-		cout << "0";
+		cout << "0 -1";
 		return 0;
 	}
 	//sort the list by address
@@ -50,23 +41,24 @@ int main()
 	}
 
 	// sort the list by key
+	sort(sorted_list.begin(), sorted_list.end(), compare);
 
 	// fix the address
-	for (auto it = res_list.begin(); it != res_list.end() - 1;it++)
+	for (auto it = sorted_list.begin(); it != sorted_list.end() - 1;it++)
 	{
 		it->right = (it + 1)->left;
 	}
-	res_list.rbegin()->right = -1;
+	sorted_list.rbegin()->right = -1;
 
-	cout << res_list.size();
-	if (res_list.size() != 0)
+	cout << sorted_list.size();
+	if (sorted_list.size() != 0)
 	{
-		printf(" %05d\n", res_list[0].left);
-		for (auto it = res_list.begin(); it != res_list.end()-1; it++)
+		printf(" %05d\n", sorted_list[0].left);
+		for (auto it = sorted_list.begin(); it != sorted_list.end()-1; it++)
 		{
 			printf("%05d %d %05d\n", it->left, it->val, it->right);
 		}
-		printf("%05d %d %d\n", res_list.rbegin()->left, res_list.rbegin()->val, res_list.rbegin()->right);
+		printf("%05d %d %d\n", sorted_list.rbegin()->left, sorted_list.rbegin()->val, sorted_list.rbegin()->right);
 	}
 	
 	return 0;

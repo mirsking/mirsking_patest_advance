@@ -95,6 +95,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1048_find_coins", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1051_pop_sequences", "advanced1051_pop_sequences\advanced1051_pop_sequences.vcxproj", "{A12FE217-76F7-4C14-B9FC-31270D0E3424}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1053_path_of_equal_weight", "advanced1053_path_of_equal_weight\advanced1053_path_of_equal_weight.vcxproj", "{A207FE29-3EB1-4EA7-A853-5156AB862C20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -285,6 +287,10 @@ Global
 		{A12FE217-76F7-4C14-B9FC-31270D0E3424}.Debug|Win32.Build.0 = Debug|Win32
 		{A12FE217-76F7-4C14-B9FC-31270D0E3424}.Release|Win32.ActiveCfg = Release|Win32
 		{A12FE217-76F7-4C14-B9FC-31270D0E3424}.Release|Win32.Build.0 = Release|Win32
+		{A207FE29-3EB1-4EA7-A853-5156AB862C20}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A207FE29-3EB1-4EA7-A853-5156AB862C20}.Debug|Win32.Build.0 = Debug|Win32
+		{A207FE29-3EB1-4EA7-A853-5156AB862C20}.Release|Win32.ActiveCfg = Release|Win32
+		{A207FE29-3EB1-4EA7-A853-5156AB862C20}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

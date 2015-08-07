@@ -20,7 +20,7 @@ int main()
 			if (colors.find(tmp) != colors.end())
 				colors[tmp]++;
 			else
-				colors[tmp] = 0;
+				colors[tmp] = 1;
 		}
 	}
 	int max_count = 0, max_color = -1;

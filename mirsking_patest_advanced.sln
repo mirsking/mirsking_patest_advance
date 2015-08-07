@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1054_the_dominant_c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1055_the_world_richest", "advanced1055_the_world_richest\advanced1055_the_world_richest.vcxproj", "{56338E5A-6D7D-4CCF-8E8A-13A1D783515B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1057_stacck", "advanced1057_stacck\advanced1057_stacck.vcxproj", "{A35E9219-C31C-4793-8380-E31C950354ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -309,6 +311,10 @@ Global
 		{56338E5A-6D7D-4CCF-8E8A-13A1D783515B}.Debug|Win32.Build.0 = Debug|Win32
 		{56338E5A-6D7D-4CCF-8E8A-13A1D783515B}.Release|Win32.ActiveCfg = Release|Win32
 		{56338E5A-6D7D-4CCF-8E8A-13A1D783515B}.Release|Win32.Build.0 = Release|Win32
+		{A35E9219-C31C-4793-8380-E31C950354ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A35E9219-C31C-4793-8380-E31C950354ED}.Debug|Win32.Build.0 = Debug|Win32
+		{A35E9219-C31C-4793-8380-E31C950354ED}.Release|Win32.ActiveCfg = Release|Win32
+		{A35E9219-C31C-4793-8380-E31C950354ED}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

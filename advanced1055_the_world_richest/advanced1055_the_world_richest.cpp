@@ -35,6 +35,14 @@ int main()
 	}
 	sort(list.rbegin(), list.rend());
 
+	vector<int> ageCount(201);
+	vector<int> valid_person;
+	for (int i = 0; i < N; i++)// remove after 100th guys with same age, since M<=100
+	{
+		if (++ageCount[list[i].age] <= 100)
+			valid_person.push_back(i);
+	}
+
 	for (int i = 0; i < K; i++)
 	{
 		int n, age1, age2;
@@ -42,8 +50,9 @@ int main()
 
 		cout << "Case #" << i + 1 <<":"<< endl;
 		int count = 0;
-		for (auto& peo : list)
+		for (auto i:valid_person)
 		{
+			auto& peo = list[i];
 			if (age1 <= peo.age && peo.age <= age2)
 			{
 				cout << peo.name << " " << peo.age << " " << peo.val << endl;

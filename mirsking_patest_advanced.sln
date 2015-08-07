@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1053_path_of_equal_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1052_linked_list_sorting", "advanced1052_linked_list_sorting\advanced1052_linked_list_sorting.vcxproj", "{C9EC64C1-3314-44CE-A006-409AD2E3722B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1054_the_dominant_color", "advanced1054_the_dominant_color\advanced1054_the_dominant_color.vcxproj", "{B0AC6597-E5BE-4476-8275-1E0EB96EB7A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -297,6 +299,10 @@ Global
 		{C9EC64C1-3314-44CE-A006-409AD2E3722B}.Debug|Win32.Build.0 = Debug|Win32
 		{C9EC64C1-3314-44CE-A006-409AD2E3722B}.Release|Win32.ActiveCfg = Release|Win32
 		{C9EC64C1-3314-44CE-A006-409AD2E3722B}.Release|Win32.Build.0 = Release|Win32
+		{B0AC6597-E5BE-4476-8275-1E0EB96EB7A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B0AC6597-E5BE-4476-8275-1E0EB96EB7A8}.Debug|Win32.Build.0 = Debug|Win32
+		{B0AC6597-E5BE-4476-8275-1E0EB96EB7A8}.Release|Win32.ActiveCfg = Release|Win32
+		{B0AC6597-E5BE-4476-8275-1E0EB96EB7A8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

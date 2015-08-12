@@ -107,6 +107,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1057_stacck", "adva
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1058_A_plus_B", "advanced1058_A_plus_B\advanced1058_A_plus_B.vcxproj", "{8A5A1604-4825-46E7-B3E7-1452C9FFD6DC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1059_prime_factors", "advanced1059_prime_factors\advanced1059_prime_factors.vcxproj", "{565D23B7-F781-4D2D-9B6E-CD0F378A3709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -321,6 +323,10 @@ Global
 		{8A5A1604-4825-46E7-B3E7-1452C9FFD6DC}.Debug|Win32.Build.0 = Debug|Win32
 		{8A5A1604-4825-46E7-B3E7-1452C9FFD6DC}.Release|Win32.ActiveCfg = Release|Win32
 		{8A5A1604-4825-46E7-B3E7-1452C9FFD6DC}.Release|Win32.Build.0 = Release|Win32
+		{565D23B7-F781-4D2D-9B6E-CD0F378A3709}.Debug|Win32.ActiveCfg = Debug|Win32
+		{565D23B7-F781-4D2D-9B6E-CD0F378A3709}.Debug|Win32.Build.0 = Debug|Win32
+		{565D23B7-F781-4D2D-9B6E-CD0F378A3709}.Release|Win32.ActiveCfg = Release|Win32
+		{565D23B7-F781-4D2D-9B6E-CD0F378A3709}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

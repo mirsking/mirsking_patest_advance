@@ -40,10 +40,18 @@ string ScienceNum(string& str, int N)
 
 	string res = "0.";
 	int num_offset = 0, prime_offset = 0;
-	if (str[0] == '0' || str[0] == '.')
+	int index = 0;
+	for (int i = 0; i < str.size();i++)
 	{
-		num_offset += 1;
-		prime_offset += 1;
+		if (str[i] == '0')
+		{
+			num_offset += 1;
+			prime_offset += 1;
+		}
+		else if (str[i] == '.')
+			num_offset += 1;
+		else
+			break;
 	}
 	for (int i = 0; i < N; i++)
 	{
@@ -81,6 +89,7 @@ int main()
 	cin >> N;
 	cin >> str1 >> str2;
 
+	/*
 	if (isSame(str1, str2, N))
 	{
 		cout << "YES ";
@@ -93,5 +102,17 @@ int main()
 		cout << " ";
 		cout << ScienceNum(str2, N);
 	}
+	*/
+	string res1 = ScienceNum(str1, N), res2 = ScienceNum(str2, N);
+	if (res1 == res2)
+	{
+		cout << "YES " << res1;
+	}
+	else
+	{
+		cout << "NO " << res1 << " " << res2;
+	}
+
+
 	return 0;
 }

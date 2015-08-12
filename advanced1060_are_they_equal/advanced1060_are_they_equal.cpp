@@ -66,7 +66,7 @@ string ScienceNum(string& str, int N)
 	else
 		n = it;
 	n -= prime_offset;
-	if (n != 0)
+	//if (n != 0)
 	{
 		res += "*10^";
 		res += to_string(n);

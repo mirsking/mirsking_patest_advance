@@ -1,111 +1,99 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
+#include <stack>
+#include<vector>
 using namespace std;
-
-struct BinTree{
-	static const int MAXN = 100001;
-	vector<int> vec;
-
-	BinTree(){ vec = vector<int>(MAXN, 0); }
-
-	int lowbit(int x)
+class BIT
+{
+private:
+	vector<int> Elem;
+	int Size;
+	int lowbit(int n)
 	{
-		return x&(-x);
+		return n&(-n);
 	}
-
-	void update(int x, int val)
+public:
+	BIT(int size) :Size(size + 1)  /*想想看还是+1好了，要不申请了100的空间只能用到99感觉太奇怪了*/
 	{
-		while (x <= MAXN)
-		{
-			vec[x] += val;
-			x += lowbit(x);
-		}
+		Elem.resize(Size);
 	}
-
-	int getSum(int x)
+	int GetSum(int right)/*[0,right]*/
 	{
 		int sum = 0;
-		while (x > 0)
+		while (right)
 		{
-			sum += vec[x];
-			x -= lowbit(x);
+			sum += Elem[right];
+			right -= lowbit(right);
 		}
 		return sum;
 	}
-
-	int findMedian(int val, int l = 0, int r = MAXN - 1)
+	int GetSum(int left, int right)/*[left,right]*/
 	{
-		if (l == r)
-			return l;
-
-		int mid = (l + r) / 2;
-		if (getSum(mid) < val)
-			return findMedian(val, mid + 1, r);
-		else
-			return findMedian(val, l, mid);
+		return GetSum(left - 1) - GetSum(right);
 	}
-
+	void Add(int value, int index)
+	{
+		while (index < Size)
+		{
+			Elem[index] += value;
+			index += lowbit(index);
+		}
+	}
+	~BIT()
+	{
+	}
 };
-
-class MyStack
+BIT bit(100000);
+int getmid(int size)
 {
-public:
-	void push(int val)
+	int index = (size + 1) / 2;
+	int left = 1, right = 100000, mid;
+	while (left<right)
 	{
-		sta.push_back(val);
-		bin_tree.update(val, 1);
-	}
-	void pop()
-	{
-		if (sta.empty())
-			cout << "Invalid" << endl;
+		mid = (left + right) / 2;
+		if (bit.GetSum(mid)<index)
+			left = mid + 1;
 		else
-		{
-			cout << *sta.rbegin() << endl;
-			bin_tree.update(*sta.rbegin(), -1);
-			sta.pop_back();
-		}
+			right = mid;
 	}
-	void peakMedian()
-	{
-		if (sta.empty())
-			cout << "Invalid" << endl;
-		else
-		{
-			cout << bin_tree.findMedian((sta.size()+1)/2) << endl;
-		}
-	}
-private:
-	vector<int> sta;
-	BinTree bin_tree;
-};
-
-
+	return left;
+}
 int main()
 {
-	int N;
-	cin >> N;
-	MyStack sta;
-	while (N--)
+	int n, tmp;
+	scanf("%d", &n);
+	stack<int> s;
+	char str[10];
+	while (n--)
 	{
-		string str;
-		cin >> str;
+		scanf("%s", str);
 		switch (str[1])
 		{
-			case 'o':
-				sta.pop();
-				break;
-			case 'e':
-				sta.peakMedian();
-				break;
-			case 'u':
-			{
-				int val; cin >> val;
-				sta.push(val);
-				break;
-			}
+		case 'e':
+		{
+					if (s.empty())
+						printf("Invalid\n");
+					else
+						printf("%d\n", getmid(s.size()));
+					break;
+		}
+		case 'o':
+		{
+					if (s.empty())
+						printf("Invalid\n");
+					else
+					{
+						tmp = s.top(); s.pop();
+						printf("%d\n", tmp);
+						bit.Add(-1, tmp);
+					}
+					break;
+		}
+		case 'u':
+		{
+					scanf("%d", &tmp); s.push(tmp);
+					bit.Add(1, tmp);
+		}
+			break;
 		}
 	}
 	return 0;

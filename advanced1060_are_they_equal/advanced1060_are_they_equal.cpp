@@ -53,6 +53,13 @@ string ScienceNum(string& str, int N)
 		else
 			break;
 	}
+	if (num_offset == str.size())// means all zero
+	{
+		for (int i = 0; i < N; i++)
+			res.push_back('0');
+		res += "*10^0";
+		return res;
+	}
 	for (int i = 0; i < N; i++)
 	{
 		char a;

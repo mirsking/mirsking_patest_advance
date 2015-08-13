@@ -18,6 +18,12 @@ int findLayor(int n)
 	return log(n + 1)/log(2);
 }
 
+
+/*
+1. 如果总元素数目N 刚好能构成layor层满树，则中间的元素一定是 full_layor_N/2;
+2. 如果总元素数目N 超过 full_layor_N， 则中间的元素是 1中的位置加上两者之差
+3. 如果2中计算出的数目大于了补全元素后满树元素个数的一半， 则中间位置取一半
+*/
 template<typename BidiIt>
 TreeNode* buildCBT(BidiIt left, BidiIt right)
 {

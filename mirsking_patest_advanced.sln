@@ -115,6 +115,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1061_dating", "adva
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1062_talent_and_virtue", "advanced1062_talent_and_virtue\advanced1062_talent_and_virtue.vcxproj", "{A7E748B7-1F11-4416-A777-D40ADF588C2C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1064_complete_binary_search_tree", "advanced1064_complete_binary_search_tree\advanced1064_complete_binary_search_tree.vcxproj", "{7A64158D-FEA0-4481-9C27-14608C5C8954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -345,6 +347,10 @@ Global
 		{A7E748B7-1F11-4416-A777-D40ADF588C2C}.Debug|Win32.Build.0 = Debug|Win32
 		{A7E748B7-1F11-4416-A777-D40ADF588C2C}.Release|Win32.ActiveCfg = Release|Win32
 		{A7E748B7-1F11-4416-A777-D40ADF588C2C}.Release|Win32.Build.0 = Release|Win32
+		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Debug|Win32.Build.0 = Debug|Win32
+		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Release|Win32.ActiveCfg = Release|Win32
+		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

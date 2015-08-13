@@ -111,6 +111,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1059_prime_factors"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1060_are_they_equal", "advanced1060_are_they_equal\advanced1060_are_they_equal.vcxproj", "{D8599E60-E2D6-4C17-B5CA-CE76152ACB0B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1061_dating", "advanced1061_dating\advanced1061_dating.vcxproj", "{1BC09A46-E12A-4DCB-9CB7-19908C09C764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -333,6 +335,10 @@ Global
 		{D8599E60-E2D6-4C17-B5CA-CE76152ACB0B}.Debug|Win32.Build.0 = Debug|Win32
 		{D8599E60-E2D6-4C17-B5CA-CE76152ACB0B}.Release|Win32.ActiveCfg = Release|Win32
 		{D8599E60-E2D6-4C17-B5CA-CE76152ACB0B}.Release|Win32.Build.0 = Release|Win32
+		{1BC09A46-E12A-4DCB-9CB7-19908C09C764}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1BC09A46-E12A-4DCB-9CB7-19908C09C764}.Debug|Win32.Build.0 = Debug|Win32
+		{1BC09A46-E12A-4DCB-9CB7-19908C09C764}.Release|Win32.ActiveCfg = Release|Win32
+		{1BC09A46-E12A-4DCB-9CB7-19908C09C764}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

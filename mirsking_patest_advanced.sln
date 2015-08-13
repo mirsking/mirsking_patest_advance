@@ -117,6 +117,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1062_talent_and_vir
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1064_complete_binary_search_tree", "advanced1064_complete_binary_search_tree\advanced1064_complete_binary_search_tree.vcxproj", "{7A64158D-FEA0-4481-9C27-14608C5C8954}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1063_set_similarity", "advanced1063_set_similarity\advanced1063_set_similarity.vcxproj", "{1704C28A-56B3-4A06-9F79-09BBBA10184F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -351,6 +353,10 @@ Global
 		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Debug|Win32.Build.0 = Debug|Win32
 		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Release|Win32.ActiveCfg = Release|Win32
 		{7A64158D-FEA0-4481-9C27-14608C5C8954}.Release|Win32.Build.0 = Release|Win32
+		{1704C28A-56B3-4A06-9F79-09BBBA10184F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1704C28A-56B3-4A06-9F79-09BBBA10184F}.Debug|Win32.Build.0 = Debug|Win32
+		{1704C28A-56B3-4A06-9F79-09BBBA10184F}.Release|Win32.ActiveCfg = Release|Win32
+		{1704C28A-56B3-4A06-9F79-09BBBA10184F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

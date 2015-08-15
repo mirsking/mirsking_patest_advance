@@ -9,6 +9,7 @@ int main()
 {
 	string str;
 	getline(cin, str);
+	str.push_back('\n');// add a last char to get the last word in the map
 	string word;
 	map<string, int> words_count;
 	for (int i = 0; i < str.size(); i++)
@@ -38,7 +39,8 @@ int main()
 	string max_word = "";
 	for (auto& word : words_count)
 	{
-		if (word.second > max_count)
+		if (word.second > max_count)// ||
+			//(word.second == max_count && word.first < max_word) )
 		{
 			max_count = word.second;
 			max_word = word.first;

@@ -131,6 +131,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1069_the_black_hole
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1070_mooncake", "advanced1070_mooncake\advanced1070_mooncake.vcxproj", "{77BF6BD0-63E6-4744-9831-22465DCCC24A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1071_speech_patterns", "advanced1071_speech_patterns\advanced1071_speech_patterns.vcxproj", "{CBA89C3D-0329-470C-ADAD-239CD700E141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -390,6 +392,10 @@ Global
 		{77BF6BD0-63E6-4744-9831-22465DCCC24A}.Debug|Win32.Build.0 = Debug|Win32
 		{77BF6BD0-63E6-4744-9831-22465DCCC24A}.Release|Win32.ActiveCfg = Release|Win32
 		{77BF6BD0-63E6-4744-9831-22465DCCC24A}.Release|Win32.Build.0 = Release|Win32
+		{CBA89C3D-0329-470C-ADAD-239CD700E141}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBA89C3D-0329-470C-ADAD-239CD700E141}.Debug|Win32.Build.0 = Debug|Win32
+		{CBA89C3D-0329-470C-ADAD-239CD700E141}.Release|Win32.ActiveCfg = Release|Win32
+		{CBA89C3D-0329-470C-ADAD-239CD700E141}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

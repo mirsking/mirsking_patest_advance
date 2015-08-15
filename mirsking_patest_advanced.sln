@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1065_A_plus_B_and_C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1066_root_of_AVL", "advanced1066_root_of_AVL\advanced1066_root_of_AVL.vcxproj", "{916CB0F9-7DE7-4983-A7BB-7737C93AE520}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1068_find_more_coins", "advanced1068_find_more_coins\advanced1068_find_more_coins.vcxproj", "{3492FEEF-5D6A-40EA-905F-848F6D9F5D87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -369,6 +371,10 @@ Global
 		{916CB0F9-7DE7-4983-A7BB-7737C93AE520}.Debug|Win32.Build.0 = Debug|Win32
 		{916CB0F9-7DE7-4983-A7BB-7737C93AE520}.Release|Win32.ActiveCfg = Release|Win32
 		{916CB0F9-7DE7-4983-A7BB-7737C93AE520}.Release|Win32.Build.0 = Release|Win32
+		{3492FEEF-5D6A-40EA-905F-848F6D9F5D87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3492FEEF-5D6A-40EA-905F-848F6D9F5D87}.Debug|Win32.Build.0 = Debug|Win32
+		{3492FEEF-5D6A-40EA-905F-848F6D9F5D87}.Release|Win32.ActiveCfg = Release|Win32
+		{3492FEEF-5D6A-40EA-905F-848F6D9F5D87}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

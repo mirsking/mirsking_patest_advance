@@ -9,7 +9,7 @@ int main()
 	int n_bak = n;
 	int dbegin = n, dend = n+1;
 	int begin = 2, end = 2;
-	while (n>1)
+	while (end<=n_bak)
 	{
 		if (n%end == 0)
 		{

@@ -23,6 +23,14 @@ int main()
 				dbegin = begin;
 				dend = end;
 			}
+			else if (end - begin == dend - dbegin)
+			{
+				if (end < dend)
+				{
+					dbegin = begin;
+					dend = end;
+				}
+			}
 			begin = begin + 1;
 			end = begin;
 			n = n_bak;

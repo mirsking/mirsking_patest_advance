@@ -2,14 +2,16 @@
 #include <vector>
 using namespace std;
 
+typedef long long LL;
+
 int main()
 {
-	int n;
+	LL n;
 	cin >> n;
-	int n_bak = n;
-	int dbegin = n, dend = n+1;
-	int begin = 2, end = 2;
-	while (end<=n_bak)
+	LL n_bak = n;
+	LL dbegin = n, dend = n+1;
+	LL begin = 2, end = 2;
+	while ((end-2)*(end-2)<=n_bak)// end-2 important, for 6=2*3, expand the end condition
 	{
 		if (n%end == 0)
 		{
@@ -36,8 +38,9 @@ int main()
 			n = n_bak;
 		}
 	}
+
 	cout << dend - dbegin << endl;
-	for (int i = dbegin; i < dend; i++)
+	for (LL i = dbegin; i < dend; i++)
 	{
 		cout << i;
 		if (i != dend - 1)

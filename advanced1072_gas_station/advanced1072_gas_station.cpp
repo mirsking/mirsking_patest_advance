@@ -61,7 +61,7 @@ int main()
 	}
 
 	
-	int min_dis = INT_MAX;
+	int min_dis = INT_MIN;
 	int max_sum = INT_MIN;
 	int min_index = -1;
 	for (int i = 0; i < M; i++)
@@ -74,7 +74,7 @@ int main()
 		int sum = 0, min_i_dist = INT_MAX;
 		for (int j = 0; j < N; j++)
 		{
-			if (distances[j]>=D)
+			if (distances[j]>D)
 			{
 				succ_flag = false;
 				break;
@@ -83,11 +83,15 @@ int main()
 				min_i_dist = distances[j];
 			sum += distances[j];
 		}
-		if (succ_flag & sum > max_sum)
+		if (succ_flag)
 		{
-			max_sum = sum;
-			min_dis = min_i_dist;
-			min_index = i;
+			if ((min_i_dist > min_dis) ||
+				(min_i_dist==min_dis)&& sum < max_sum)
+			{
+				max_sum = sum;
+				min_dis = min_i_dist;
+				min_index = i;
+			}
 		}
 	}
 

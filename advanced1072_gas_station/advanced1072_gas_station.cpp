@@ -18,7 +18,7 @@ void calDist(const vector<vector<int>>& map, int start, vector<int>& distances)
 		int curr_dis = distances[start];
 		for (int i = 0; i < map.size(); i++)
 		{
-			if (i != start && map[start][i] != 0)
+			if (i != start && map[start][i] != -1)
 			{
 				if (!visited[i])
 					que.push(i);
@@ -29,7 +29,6 @@ void calDist(const vector<vector<int>>& map, int start, vector<int>& distances)
 
 		visited[start] = true;
 		que.pop();
-
 	}
 }
 
@@ -40,7 +39,7 @@ int main()
 	vector<vector<int>> map;
 	map.resize(N + M);
 	for (auto& m : map)
-		m.resize(N + M);
+		m = vector<int>(N+M, -1);
 
 	for (int i = 0; i < K; i++)
 	{

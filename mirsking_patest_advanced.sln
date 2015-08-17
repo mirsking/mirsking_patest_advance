@@ -137,6 +137,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1096_consecutive_fa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1097_deduplication_on_a_linked_list", "advanced1097_deduplication_on_a_linked_list\advanced1097_deduplication_on_a_linked_list.vcxproj", "{C4C76B34-541E-4B36-AC4D-7F5998503319}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1072_gas_station", "advanced1072_gas_station\advanced1072_gas_station.vcxproj", "{A4583B73-B7A9-4611-8B6D-CB0923E01790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -408,6 +410,10 @@ Global
 		{C4C76B34-541E-4B36-AC4D-7F5998503319}.Debug|Win32.Build.0 = Debug|Win32
 		{C4C76B34-541E-4B36-AC4D-7F5998503319}.Release|Win32.ActiveCfg = Release|Win32
 		{C4C76B34-541E-4B36-AC4D-7F5998503319}.Release|Win32.Build.0 = Release|Win32
+		{A4583B73-B7A9-4611-8B6D-CB0923E01790}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4583B73-B7A9-4611-8B6D-CB0923E01790}.Debug|Win32.Build.0 = Debug|Win32
+		{A4583B73-B7A9-4611-8B6D-CB0923E01790}.Release|Win32.ActiveCfg = Release|Win32
+		{A4583B73-B7A9-4611-8B6D-CB0923E01790}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

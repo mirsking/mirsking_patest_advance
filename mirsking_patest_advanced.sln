@@ -145,6 +145,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1074_reversing_link
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1075_pat_judge", "advanced1075_pat_judge\advanced1075_pat_judge.vcxproj", "{E73571C3-CC37-4454-999B-99AC51EC1D2A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1077_kuchiguse", "advanced1077_kuchiguse\advanced1077_kuchiguse.vcxproj", "{362BF818-F646-4B3A-A908-181775FA404A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -432,6 +434,10 @@ Global
 		{E73571C3-CC37-4454-999B-99AC51EC1D2A}.Debug|Win32.Build.0 = Debug|Win32
 		{E73571C3-CC37-4454-999B-99AC51EC1D2A}.Release|Win32.ActiveCfg = Release|Win32
 		{E73571C3-CC37-4454-999B-99AC51EC1D2A}.Release|Win32.Build.0 = Release|Win32
+		{362BF818-F646-4B3A-A908-181775FA404A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{362BF818-F646-4B3A-A908-181775FA404A}.Debug|Win32.Build.0 = Debug|Win32
+		{362BF818-F646-4B3A-A908-181775FA404A}.Release|Win32.ActiveCfg = Release|Win32
+		{362BF818-F646-4B3A-A908-181775FA404A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

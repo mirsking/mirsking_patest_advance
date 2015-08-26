@@ -46,28 +46,20 @@ int main()
 {
 	LL N;
 	scanf("%lld\n", &N);
-	vector<RatNum> nums;
-	vector<LL> bs;
-	nums.resize(N);
-	bs.resize(N);
+	RatNum res;
+	res.a = 0; res.b = 1;
 	for (LL i = 0; i < N; i++)
 	{
-		scanf("%lld/%lld", &(nums[i].a), &(nums[i].b));
-		bs[i] = nums[i].b;
+		RatNum tmp;
+		scanf("%lld/%lld", &(tmp.a), &(tmp.b));
+		res.a = res.a*tmp.b + res.b*tmp.a;
+		res.b = res.b*tmp.b;
+		LL gg = gcd(labs(res.a), labs(res.b));
+		res.a /= gg;
+		res.b /= gg;
 	}
 
-	LL ll = nlcm(bs, bs.size());
-	//LL ll = *max_element(bs.begin(), bs.end());
-	RatNum res;
-	res.b = ll;
-	res.a = 0;
-	for (auto& num : nums)
-	{
-		res.a = res.a + num.a*ll / num.b;
-	}
-	LL gg = gcd(res.a, res.b);
-	res.a = res.a / gg;
-	res.b = res.b / gg;
+	
 	if (res.a == 0)
 	{
 		cout << "0";

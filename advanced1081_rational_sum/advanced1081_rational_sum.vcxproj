@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D84015B1-7606-4B29-B1B2-0EE8468B415A}</ProjectGuid>
+    <ProjectGuid>{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>advanced1078_hashing</RootNamespace>
+    <RootNamespace>advanced1081_rational_sum</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -78,7 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="advanced1078_hashing.cpp" />
+    <ClCompile Include="advanced1081_rational_sum.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

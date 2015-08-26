@@ -149,6 +149,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1077_kuchiguse", "a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1078_hashing", "advanced1078_hashing\advanced1078_hashing.vcxproj", "{D84015B1-7606-4B29-B1B2-0EE8468B415A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1081_rational_sum", "advanced1081_rational_sum\advanced1081_rational_sum.vcxproj", "{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -444,6 +446,10 @@ Global
 		{D84015B1-7606-4B29-B1B2-0EE8468B415A}.Debug|Win32.Build.0 = Debug|Win32
 		{D84015B1-7606-4B29-B1B2-0EE8468B415A}.Release|Win32.ActiveCfg = Release|Win32
 		{D84015B1-7606-4B29-B1B2-0EE8468B415A}.Release|Win32.Build.0 = Release|Win32
+		{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}.Debug|Win32.Build.0 = Debug|Win32
+		{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}.Release|Win32.ActiveCfg = Release|Win32
+		{3DD98EBF-2D78-4997-84B0-FAB3C551C1A6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

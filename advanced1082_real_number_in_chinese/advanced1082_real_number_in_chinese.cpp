@@ -34,7 +34,7 @@ int main()
 					res.push_back(CH[index]);
 				pushed_zero = false;
 			}
-			else if (!(res.size()==0 || (res.size()==1&&res[0]=="-")))
+			else if (!(res.size()==0 || (res.size()==1&&res[0]=="Fu")))
 			{
 				if (pushed_zero == false)
 				{

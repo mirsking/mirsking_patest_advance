@@ -153,6 +153,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1081_rational_sum",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1082_real_number_in_chinese", "advanced1082_real_number_in_chinese\advanced1082_real_number_in_chinese.vcxproj", "{A47F006A-45BA-43A9-BDF7-47651F47D678}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1083_list_grades", "advanced1083_list_grades\advanced1083_list_grades.vcxproj", "{F85BCFFC-0E9F-49C8-9551-83669FCF5BFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -456,6 +458,10 @@ Global
 		{A47F006A-45BA-43A9-BDF7-47651F47D678}.Debug|Win32.Build.0 = Debug|Win32
 		{A47F006A-45BA-43A9-BDF7-47651F47D678}.Release|Win32.ActiveCfg = Release|Win32
 		{A47F006A-45BA-43A9-BDF7-47651F47D678}.Release|Win32.Build.0 = Release|Win32
+		{F85BCFFC-0E9F-49C8-9551-83669FCF5BFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F85BCFFC-0E9F-49C8-9551-83669FCF5BFE}.Debug|Win32.Build.0 = Debug|Win32
+		{F85BCFFC-0E9F-49C8-9551-83669FCF5BFE}.Release|Win32.ActiveCfg = Release|Win32
+		{F85BCFFC-0E9F-49C8-9551-83669FCF5BFE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

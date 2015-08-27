@@ -114,35 +114,38 @@ int main()
 
 		int cur_level = 0;
 		int level_back = que.back();
-		vector<int> levels(N, -1);
-		levels[begin] = 0;
+		//vector<int> levels(N, -1);
+		//levels[begin] = 0;
+		vector<bool> visited(N, false);
+		visited[begin] = true;
 		while (!que.empty())
 		{
 			int front = que.front();
 			que.pop_front();
-			if (levels[front] == -1)
-				levels[front] = cur_level;
-
-			for (auto& f : map[front])
-				if (levels[f]==-1)// only push the not finished ones
-					que.push_back(f);
-
+			for (int j = 0; j < map[front].size(); j++)
+			{
+				if (!visited[map[front][j]])
+				{
+					que.push_back(map[front][j]);
+					visited[map[front][j]] = true;
+				}
+			}
 			if (front == level_back)
 			{
 				level_back = que.back();
 				cur_level++;
 			}
 
-			if (cur_level > L)
+			if (cur_level >= L)
 				break;
 		}
 		int count = 0;
-		for (auto& num : levels)
+		for (auto it = visited.begin(); it != visited.end(); it++)
 		{
-			if (num>0&& num<=L)
+			if (*it==true)
 				count++;
 		}
-		cout << count << endl;
+		cout << count-1 << endl;
 	}
 
 	

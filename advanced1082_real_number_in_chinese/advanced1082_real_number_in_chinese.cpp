@@ -14,8 +14,8 @@ int main()
 	vector<string> res;
 
 	if (num < 0)
-		res.push_back("-");
-	else if (num == 0)
+		res.push_back("Fu");
+	if (num == 0)
 		res.push_back(NUM[0]);
 	else
 	{
@@ -30,10 +30,11 @@ int main()
 			if (wei != 0)
 			{
 				res.push_back(NUM[wei]);
-				res.push_back(CH[index]);
+				if (index!=0)//ge
+					res.push_back(CH[index]);
 				pushed_zero = false;
 			}
-			else if (res.size()!=0)
+			else if (!(res.size()==0 || (res.size()==1&&res[0]=="-")))
 			{
 				if (pushed_zero == false)
 				{
@@ -51,9 +52,6 @@ int main()
 			index--;
 			r /= 10;
 		}
-
-
-
 	}
 
 

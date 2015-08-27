@@ -1,10 +1,10 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 #include <climits>
 using namespace std;
 typedef vector<vector<int>> map_t;
 
-void Dijkstra(const map_t& map, int n, vector<int> & distance)
+void Dijkstra(const map_t& map, int n, vector<int> & distance, int L)
 {
 	int N = map.size() - 1;
 
@@ -41,7 +41,7 @@ void Dijkstra(const map_t& map, int n, vector<int> & distance)
 int getForwards(const map_t& map, int L, int n)
 {
 	vector<int> dist;
-	Dijkstra(map, n, dist);
+	Dijkstra(map, n, dist, L);
 	int count = 0;
 	for (int i = 1; i < dist.size(); i++)
 	{
@@ -78,5 +78,73 @@ int main()
 		int n; cin >> n;
 		cout << getForwards(map, L, n) << endl;
 	}
+	return 0;
+}*/
+
+#include <iostream>
+#include <vector>
+#include <deque>
+using namespace std;
+
+
+int main()
+{
+	//改用邻接表储存
+	vector<vector<int>> map;
+	int N, L;
+	cin >> N >> L;
+	map.resize(N);
+	for (int i = 0; i < N; i++)
+	{
+		int n; cin >> n;
+		for (int j = 0; j < n; j++)
+		{
+			int tmp; cin >> tmp;
+			map[tmp - 1].push_back(i);
+		}
+	}
+
+	int NN; cin >> NN;
+	while (NN--)
+	{
+		int begin; cin >> begin;
+		begin = begin - 1;
+		deque<int> que;
+		que.push_back(begin);
+
+		int cur_level = 0;
+		int level_back = que.back();
+		vector<int> levels(N, -1);
+		levels[begin] = 0;
+		while (!que.empty())
+		{
+			int front = que.front();
+			que.pop_front();
+			if (levels[front] == -1)
+				levels[front] = cur_level;
+
+			for (auto& f : map[front])
+				if (levels[f]==-1)// only push the not finished ones
+					que.push_back(f);
+
+			if (front == level_back)
+			{
+				level_back = que.back();
+				cur_level++;
+			}
+
+			if (cur_level > L)
+				break;
+		}
+		int count = 0;
+		for (auto& num : levels)
+		{
+			if (num>0&& num<=L)
+				count++;
+		}
+		cout << count << endl;
+	}
+
+	
 	return 0;
 }

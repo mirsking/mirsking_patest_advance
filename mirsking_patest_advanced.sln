@@ -159,6 +159,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1076_forwards_on_we
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1084_broken_keyboard", "advanced1084_broken_keyboard\advanced1084_broken_keyboard.vcxproj", "{85BCF83D-401A-46BA-9711-523A4F0166E4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1085_perfect_sequence", "advanced1085_perfect_sequence\advanced1085_perfect_sequence.vcxproj", "{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -474,6 +476,10 @@ Global
 		{85BCF83D-401A-46BA-9711-523A4F0166E4}.Debug|Win32.Build.0 = Debug|Win32
 		{85BCF83D-401A-46BA-9711-523A4F0166E4}.Release|Win32.ActiveCfg = Release|Win32
 		{85BCF83D-401A-46BA-9711-523A4F0166E4}.Release|Win32.Build.0 = Release|Win32
+		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Debug|Win32.Build.0 = Debug|Win32
+		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Release|Win32.ActiveCfg = Release|Win32
+		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

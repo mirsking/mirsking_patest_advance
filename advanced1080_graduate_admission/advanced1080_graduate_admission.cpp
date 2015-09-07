@@ -54,12 +54,14 @@ int main()
 
 	int rank = 0;
 	Student last_stu = stus[0];
-	for (auto& stu : stus)
+	for (int i = 0; i < stus.size();i++)
 	{
+		auto& stu = stus[i];
 		// update rank
 		if (!(stu.ge == last_stu.ge && stu.sum == last_stu.sum))
-			rank++;
+			rank = i;
 		stu.rank = rank;
+		last_stu = stu;
 
 		for (auto& app : stu.apps)
 		{

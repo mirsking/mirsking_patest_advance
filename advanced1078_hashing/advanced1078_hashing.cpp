@@ -55,10 +55,7 @@ int main()
 	int N, m;
 	cin >> N >> m;
 	int n = getTableSize(N);
-<<<<<<< HEAD
-=======
 	cout <<"1:" << n << endl;
->>>>>>> 40ae72a98f316a5c10a194c3a3475665fe3e43dd
 	vector<int> hash_table(n, -1);
 	for (int i = 0; i < m; i++)
 	{

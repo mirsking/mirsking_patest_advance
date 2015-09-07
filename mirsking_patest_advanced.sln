@@ -161,6 +161,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1084_broken_keyboar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1085_perfect_sequence", "advanced1085_perfect_sequence\advanced1085_perfect_sequence.vcxproj", "{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1086_tree_travesal_again", "advanced1086_tree_travesal_again\advanced1086_tree_travesal_again.vcxproj", "{87F29CDB-0C4E-40C3-91D1-AB599899C91A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1088_rational_arithmetic", "advanced1088_rational_arithmetic\advanced1088_rational_arithmetic.vcxproj", "{6EF59C6B-056E-4006-A9B1-F7401774ED13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -480,6 +484,14 @@ Global
 		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Debug|Win32.Build.0 = Debug|Win32
 		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Release|Win32.ActiveCfg = Release|Win32
 		{DBA24AA4-D60A-4D24-97E0-BA43647FDC81}.Release|Win32.Build.0 = Release|Win32
+		{87F29CDB-0C4E-40C3-91D1-AB599899C91A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87F29CDB-0C4E-40C3-91D1-AB599899C91A}.Debug|Win32.Build.0 = Debug|Win32
+		{87F29CDB-0C4E-40C3-91D1-AB599899C91A}.Release|Win32.ActiveCfg = Release|Win32
+		{87F29CDB-0C4E-40C3-91D1-AB599899C91A}.Release|Win32.Build.0 = Release|Win32
+		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Debug|Win32.Build.0 = Debug|Win32
+		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Release|Win32.ActiveCfg = Release|Win32
+		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

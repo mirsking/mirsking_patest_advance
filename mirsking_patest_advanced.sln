@@ -165,6 +165,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1086_tree_travesal_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1088_rational_arithmetic", "advanced1088_rational_arithmetic\advanced1088_rational_arithmetic.vcxproj", "{6EF59C6B-056E-4006-A9B1-F7401774ED13}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1080_graduate_admission", "advanced1080_graduate_admission\advanced1080_graduate_admission.vcxproj", "{CDCB74BB-1789-4C3F-A1F4-CE1480A018F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -492,6 +494,10 @@ Global
 		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Debug|Win32.Build.0 = Debug|Win32
 		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Release|Win32.ActiveCfg = Release|Win32
 		{6EF59C6B-056E-4006-A9B1-F7401774ED13}.Release|Win32.Build.0 = Release|Win32
+		{CDCB74BB-1789-4C3F-A1F4-CE1480A018F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDCB74BB-1789-4C3F-A1F4-CE1480A018F1}.Debug|Win32.Build.0 = Debug|Win32
+		{CDCB74BB-1789-4C3F-A1F4-CE1480A018F1}.Release|Win32.ActiveCfg = Release|Win32
+		{CDCB74BB-1789-4C3F-A1F4-CE1480A018F1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

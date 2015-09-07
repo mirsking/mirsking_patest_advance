@@ -6,6 +6,7 @@ using namespace std;
 
 struct School{
 	int quota_max;
+	int last_rank;
 	vector<int> admissions;
 };
 
@@ -37,7 +38,10 @@ int main()
 	vector<School> schools;
 	schools.resize(m);
 	for (int i = 0; i < m; i++)
+	{
 		cin >> schools[i].quota_max;
+		schools[i].last_rank = -1;
+	}
 	vector<Student> stus;
 	for (int i = 0; i < n;i++)
 	{
@@ -69,14 +73,15 @@ int main()
 			if (sch.admissions.size() < sch.quota_max)
 			{
 				sch.admissions.push_back(stu.id);
+				sch.last_rank = stu.rank;
 				break;
 			}
 			else
 			{
-				auto& last_adm = *sch.admissions.rbegin();
-				if (stu.rank == stus[last_adm].rank)
+				if (stu.rank == sch.last_rank)
 				{
 					sch.admissions.push_back(stu.id);
+					sch.last_rank = stu.rank;
 					break;
 				}
 			}

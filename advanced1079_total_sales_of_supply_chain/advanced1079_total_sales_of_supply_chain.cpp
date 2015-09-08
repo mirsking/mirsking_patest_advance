@@ -44,7 +44,9 @@ void BFS(deque<TreeNode*> que, int& layor, double& sum)
 	auto front = que.front();
 	if (front == nullptr)
 		return;
+	
 	auto last = que.back();
+
 	do{
 		front = que.front();
 		que.pop_front();
@@ -84,11 +86,24 @@ int main()
 		}
 	}
 	TreeNode* root = buildChain(chains, sums, 0);
-	int layor = 0;
+	root->layor = 0;
+
 	double sum = 0;
-	deque<TreeNode*> que;
-	que.push_back(root);
-	BFS(que, layor, sum);
+	if (root->sons.empty())
+	{
+		//test point 2
+		//1 1 1
+		//0 9
+		if (root->is_leaf)
+			sum += (price*pow(1+rate/100, root->layor)*root->sum);
+	}
+	else
+	{
+		int layor = 0;
+		deque<TreeNode*> que;
+		que.push_back(root);
+		BFS(que, layor, sum);
+	}
 	printf("%.1lf", sum);
 	return 0;
 

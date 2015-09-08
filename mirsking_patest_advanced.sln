@@ -177,6 +177,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1093_count_PAT", "a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1094_the_largest_generation", "advanced1094_the_largest_generation\advanced1094_the_largest_generation.vcxproj", "{99703531-60C5-4D61-AFF8-0E4F16CA2590}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1079_total_sales_of_supply_chain", "advanced1079_total_sales_of_supply_chain\advanced1079_total_sales_of_supply_chain.vcxproj", "{E1927AF0-15A9-4EB2-A216-441678EE3DE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -528,6 +530,10 @@ Global
 		{99703531-60C5-4D61-AFF8-0E4F16CA2590}.Debug|Win32.Build.0 = Debug|Win32
 		{99703531-60C5-4D61-AFF8-0E4F16CA2590}.Release|Win32.ActiveCfg = Release|Win32
 		{99703531-60C5-4D61-AFF8-0E4F16CA2590}.Release|Win32.Build.0 = Release|Win32
+		{E1927AF0-15A9-4EB2-A216-441678EE3DE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1927AF0-15A9-4EB2-A216-441678EE3DE3}.Debug|Win32.Build.0 = Debug|Win32
+		{E1927AF0-15A9-4EB2-A216-441678EE3DE3}.Release|Win32.ActiveCfg = Release|Win32
+		{E1927AF0-15A9-4EB2-A216-441678EE3DE3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

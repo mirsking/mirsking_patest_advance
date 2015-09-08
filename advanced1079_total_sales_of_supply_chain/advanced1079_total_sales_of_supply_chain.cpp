@@ -13,14 +13,11 @@ struct TreeNode
 	int layor;
 	bool is_leaf;
 	int sum;
-	TreeNode(int val) :id(val), layor(-1), is_leaf(false), sum(0){}
+	TreeNode(int val) :id(val), layor(0), is_leaf(false), sum(0){}
 };
 
 TreeNode* buildChain(const vector<vector<int>>& chains, const vector<int>& sums, int id)
 {
-	if (id >= chains.size())
-		return nullptr;
-
 	TreeNode* root = new TreeNode(id);
 	if (sums[id] > 0)
 	{
@@ -31,22 +28,20 @@ TreeNode* buildChain(const vector<vector<int>>& chains, const vector<int>& sums,
 	for (auto& c : chains[id])
 	{
 		TreeNode* child = buildChain(chains, sums, c);
-		root->sons.push_back(child);
+		if (child!=nullptr)
+			root->sons.push_back(child);
 	}
 	return root;
 }
 
 void BFS(deque<TreeNode*> que, int& layor, double& sum)
 {
-	layor++;
 	if (que.empty())
 		return;
-	auto front = que.front();
-	if (front == nullptr)
-		return;
-	
-	auto last = que.back();
 
+	layor++;
+	auto front = que.front();
+	auto last = que.back();
 	do{
 		front = que.front();
 		que.pop_front();
@@ -55,9 +50,7 @@ void BFS(deque<TreeNode*> que, int& layor, double& sum)
 			c->layor = layor;
 			que.push_back(c);
 			if (c->is_leaf == true)
-			{
 				sum += (price*pow(1+rate/100, c->layor)*c->sum);
-			}
 		}
 	} while (front != last);
 	BFS(que, layor, sum);
@@ -86,7 +79,8 @@ int main()
 		}
 	}
 	TreeNode* root = buildChain(chains, sums, 0);
-	root->layor = 0;
+	if (root == nullptr)
+		return 0;
 
 	double sum = 0;
 	if (root->sons.empty())

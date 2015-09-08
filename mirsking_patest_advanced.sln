@@ -169,6 +169,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1080_graduate_admis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1089_insert_or_merge", "advanced1089_insert_or_merge\advanced1089_insert_or_merge.vcxproj", "{E12C0B37-7A4B-485A-82E8-2F0D6636F65C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1092_to_buy_or_not_to_buy", "advanced1092_to_buy_or_not_to_buy\advanced1092_to_buy_or_not_to_buy.vcxproj", "{C665C8B9-39B1-4F34-9E37-70323C8F2292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -504,6 +506,10 @@ Global
 		{E12C0B37-7A4B-485A-82E8-2F0D6636F65C}.Debug|Win32.Build.0 = Debug|Win32
 		{E12C0B37-7A4B-485A-82E8-2F0D6636F65C}.Release|Win32.ActiveCfg = Release|Win32
 		{E12C0B37-7A4B-485A-82E8-2F0D6636F65C}.Release|Win32.Build.0 = Release|Win32
+		{C665C8B9-39B1-4F34-9E37-70323C8F2292}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C665C8B9-39B1-4F34-9E37-70323C8F2292}.Debug|Win32.Build.0 = Debug|Win32
+		{C665C8B9-39B1-4F34-9E37-70323C8F2292}.Release|Win32.ActiveCfg = Release|Win32
+		{C665C8B9-39B1-4F34-9E37-70323C8F2292}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

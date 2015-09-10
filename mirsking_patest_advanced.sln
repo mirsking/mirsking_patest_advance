@@ -181,6 +181,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1079_total_sales_of
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1090_highest_price_in_supply_chain", "advanced1090_highest_price_in_supply_chain\advanced1090_highest_price_in_supply_chain.vcxproj", "{8E69B9AD-A6A0-4C6A-90F1-76A2BF62583E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "advanced1087_all_roads_to_rome", "advanced1087_all_roads_to_rome\advanced1087_all_roads_to_rome.vcxproj", "{9A11CD75-DCAB-47E1-A39A-5A8D057FFF3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -540,6 +542,10 @@ Global
 		{8E69B9AD-A6A0-4C6A-90F1-76A2BF62583E}.Debug|Win32.Build.0 = Debug|Win32
 		{8E69B9AD-A6A0-4C6A-90F1-76A2BF62583E}.Release|Win32.ActiveCfg = Release|Win32
 		{8E69B9AD-A6A0-4C6A-90F1-76A2BF62583E}.Release|Win32.Build.0 = Release|Win32
+		{9A11CD75-DCAB-47E1-A39A-5A8D057FFF3F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A11CD75-DCAB-47E1-A39A-5A8D057FFF3F}.Debug|Win32.Build.0 = Debug|Win32
+		{9A11CD75-DCAB-47E1-A39A-5A8D057FFF3F}.Release|Win32.ActiveCfg = Release|Win32
+		{9A11CD75-DCAB-47E1-A39A-5A8D057FFF3F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

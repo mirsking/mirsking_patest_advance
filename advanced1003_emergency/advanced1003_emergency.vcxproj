@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F6A894C0-0878-4C99-A2D1-A75918D78827}</ProjectGuid>
+    <ProjectGuid>{EDFE4940-B424-4944-A832-3D292D47E123}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>advanced1003_emergency</RootNamespace>
   </PropertyGroup>

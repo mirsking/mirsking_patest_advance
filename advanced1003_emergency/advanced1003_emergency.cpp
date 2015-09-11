@@ -1,52 +1,105 @@
 #include <iostream>
 #include <vector>
-#include <queue>
-
+#include <climits>
 using namespace std;
 
-struct map_properity{
-	int color;
-	int distance;
-	int resouce;
-	map_properity():
-		color(-1),distance(0),resouce(0){};
-};
-
-struct emergency_map{
-	int N;// number of cities
-	int M;// number of roads
-	int begin, end;
-	vector<int> teams_vec;
-	vector<vector<int> > city_map;
-	vector<map_properity> city_map_properity;
-};
-
-
-int main(int argc, char** argv)
+void dijkstra(const vector<vector<int>>& mp, int start, vector<int>& dists, vector<vector<int>>& paths)
 {
-	emergency_map e_map;
-	cin >> e_map.N >> e_map.M >> e_map.begin >> e_map.end;
-	int tmp;
-	for (int i = 0; i < e_map.N; i++)
+	int n = mp.size();
+	dists = vector<int>(n, INT_MAX);
+	paths.resize(n);
+	vector<bool> visited(n, false);
+
+	dists[start] = 0;
+
+	for (int count = 0; count < n; count++)
 	{
-		cin >> tmp;
-		e_map.teams_vec.push_back(tmp);
+		//find min start
+		int min_dist = INT_MAX;
+		int u = start;
+		for (int i = 0; i < n; i++)
+		{
+			if (visited[i] == false && dists[i] < min_dist)
+			{
+				min_dist = dists[i];
+				u = i;
+			}
+		}
+
+		visited[u] = true;
+		//update the dists
+		for (int v = 0; v < n; v++)
+		{
+			if (visited[v] == false && mp[u][v]>0 && dists[u] != INT_MAX)
+			{
+				if (dists[u] + mp[u][v] < dists[v])
+				{
+					dists[v] = dists[u] + mp[u][v];
+					paths[v].clear();
+					paths[v].push_back(u);
+				}
+				else if (dists[u] + mp[u][v] == dists[v])
+				{
+					paths[v].push_back(u);
+				}
+			}
+		}
+	}
+}
+
+
+void dfs(const vector<vector<int>>& paths,int start, int end, int& path_count, const vector<int>& hands, int& cur_hands, int& max_hands)
+{
+	cur_hands += hands[end];
+	if (end == start)
+	{
+		path_count++;
+		if (max_hands < cur_hands)
+		{
+			max_hands = cur_hands;
+		}
+	}
+	else
+	{
+		for (auto e : paths[end])
+		{
+			dfs(paths, start, e, path_count, hands, cur_hands, max_hands);
+		}
+	}
+	cur_hands -= hands[end];
+}
+
+int main()
+{
+	int n, k, start, end;
+	cin >> n >> k >> start >> end;
+	vector<int> hands(n);
+	for (int i = 0; i < n; i++)
+	{
+		cin >> hands[i];
 	}
 
-	e_map.city_map.resize(e_map.N);
-	for (auto& vec : e_map.city_map)
-		vec.resize(e_map.N);
-	e_map.city_map_properity.resize(e_map.N);
-
-	for (int i = 0; i < e_map.M; i++)
+	vector<vector<int>> mp(n);
+	for (int i = 0; i < n; i++)
+		mp[i].resize(n);
+	for (int i = 0; i < k; i++)
 	{
-		int a, b, c;
-		cin >> a >> b >> c;
-		e_map.city_map[a][b] = c;
+		int a, b, dis;
+		cin >> a >> b >> dis;
+		mp[a][b] = dis;
+		mp[b][a] = dis;
 	}
 
+	vector<int> dists;
+	vector<vector<int>> paths;
+	dijkstra(mp, start, dists, paths);
 
-	
+	int path_count = 0;
+	int curr_hand = 0, max_hand = 0;
+	dfs(paths, start, end, path_count, hands, curr_hand, max_hand);
+
+	cout << path_count << " " << max_hand;
 
 	return 0;
+
 }
